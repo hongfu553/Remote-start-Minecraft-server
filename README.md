@@ -11,7 +11,7 @@
 ## 步驟
 
 1. **取得 Discord Bot Token**
-    * 參考 [小 Shawn 的 HackMD](https://hackmd.io/@smallshawn95/python_discord_bot_base) 教學創建 Discord bot 並取得 token。
+    * 參考 [@smallshawn95 的 HackMD](https://hackmd.io/@smallshawn95/python_discord_bot_base) 教學創建 Discord bot 並取得 token。
     * **請務必保存你的 token，因為它是你 bot 的唯一識別碼。**
 
 2. **安裝依賴套件**
