@@ -36,8 +36,6 @@
 
 6. **完成**
     * 你的 Discord bot 現在應該已經連線到你的 Discord 伺服器。
-    * 你可以用 `/start` 指令來啟動你的 Minecraft 伺服器。
-    * 你可以用 `/stop` 指令來停止你的 Minecraft 伺服器。
 
 ## 開機自啟動 (Windows)
 
