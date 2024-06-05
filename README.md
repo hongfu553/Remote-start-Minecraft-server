@@ -36,7 +36,7 @@
 
 6. **完成**
     * 你的 Discord bot 現在應該已經連線到你的 Discord 伺服器。
-    * 在Discord伺服器內輸入 `%server_start` 遠端啟動伺服器
+    * 在Discord伺服器內輸入 `%server_start` 即可遠端啟動伺服器
 
 ## 開機自啟動 (Windows)
 
