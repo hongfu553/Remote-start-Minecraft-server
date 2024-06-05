@@ -1,15 +1,12 @@
 import discord
 from discord.ext import commands
-import os
-from dotenv import load_dotenv
 import subprocess
-
-load_dotenv()
-
-key = os.getenv('DC_key')
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix = "%", intents = intents)
+
+# 替換成剛剛創建的Discord bot token
+key = "your discord bot token"
 
 @bot.event
 async def on_ready():
@@ -22,10 +19,10 @@ async def hello(ctx):
 @bot.command()
 async def server_start(ctx):
     try:
-        # 替換 'path_to_your_bat_file.bat' 為你真正的 .bat 文件的路徑
-        bat_file_path = "path_to_your_bat_file.bat"
-        subprocess.run([bat_file_path], check=True)
-        await ctx.send("伺服器已啟動！")
+        shortcut_file_path = "run.bat.lnk"
+        await ctx.send("伺服器啟動中(約1~2分鐘)...")
+        subprocess.run(["cmd", "/c", shortcut_file_path], check=True)
+        await ctx.send("伺服器已關閉!")
     except Exception as e:
         await ctx.send(f"啟動伺服器時出錯: {e}")
 
