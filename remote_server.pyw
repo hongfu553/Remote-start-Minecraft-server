@@ -1,6 +1,24 @@
 import discord
 from discord.ext import commands
 import subprocess
+import os
+import sys
+import atexit
+
+lock_file_path = "script.lock"
+
+if os.path.exists(lock_file_path):
+    print("Script is already running.")
+    sys.exit()
+
+with open(lock_file_path, "w") as lock_file:
+    lock_file.write(str(os.getpid()))
+
+def remove_lock_file():
+    if os.path.exists(lock_file_path):
+        os.remove(lock_file_path)
+
+atexit.register(remove_lock_file)
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix = "%", intents = intents)
