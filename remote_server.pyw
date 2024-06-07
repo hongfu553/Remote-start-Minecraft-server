@@ -21,7 +21,7 @@ async def server_start(ctx):
     try:
         shortcut_file_path = "run.bat.lnk"
         await ctx.send("伺服器啟動中(約1~2分鐘)...")
-        subprocess.Popen(["cmd", "/c", shortcut_file_path])
+        subprocess.Popen(["cmd", "/c", "start", shortcut_file_path])
     except Exception as e:
         await ctx.send(f"啟動伺服器時出錯: {e}")
 
