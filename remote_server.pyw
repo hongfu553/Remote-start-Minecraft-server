@@ -17,7 +17,7 @@ def mcstatus():
     mc_server_status_response.raise_for_status()
         
     mc_server_status = mc_server_status_response.json()
-    server_online = mc_server_status.get("online", False)  # 使用 .get() 來避免 KeyError
+    server_online = mc_server_status.get("online", False)
     return server_online
 
 load_dotenv()
@@ -25,8 +25,6 @@ key =os.getenv("key")
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="%", intents=intents)
-
-
 
 @bot.event
 async def on_ready():
