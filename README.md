@@ -1,3 +1,4 @@
+[English version](/language/english.md)
 # 遠端啟動 Minecraft 伺服器的 Discord Bot
 
 這個 README 文件說明如何設定和使用 Discord bot 來遠端啟動你的 Minecraft 伺服器。
@@ -50,6 +51,7 @@
 7. **完成**
     * 你的 Discord bot 現在應該已經連線到你的 Discord 伺服器。
     * 在Discord伺服器內輸入 `%server_start` 即可遠端啟動伺服器
+    * 輸入 `%TM` 可查看伺服器系統資源佔用
 
 ## 開機自啟動 (Windows)
 
@@ -68,7 +70,3 @@
 ## 貢獻
 
 歡迎對這個專案做出貢獻！請透過 pull request 提交你的更改。
-
-## 授權
-
-此專案使用 [MIT 授權](https://opensource.org/licenses/MIT)。
