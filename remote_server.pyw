@@ -87,4 +87,12 @@ async def server_start(ctx):
     except Exception as e:
         await ctx.send(f"發生錯誤: {e}")
 
+@bot.command()
+async def status(ctx):
+    data = mcstatus()
+    if data:
+        await ctx.send("Minecraft server is online")
+    else:
+        await ctx.send("Minecraft server is offline")
+
 bot.run(key)
